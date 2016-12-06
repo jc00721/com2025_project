@@ -7,6 +7,6 @@ class HomeControllerTest < ActionController::TestCase
   end
   test 'should get contact' do
     get :contact
-    assert_response :success
+    assert_response :sucess
   end
 end

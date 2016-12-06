@@ -27,5 +27,14 @@ en:
     home:
     
     contact:
-        title: Contact us
+        title: Contact Us
         contact_us: Complete the following form to get in touch with us.
+        name: "Name:"
+        enter_name: Enter your name
+        email: "Email:"
+        enter_email: Enter your email address
+        subject: "Subject"
+        enter_subject: Enter the Subject of your message
+        message: "Message"
+        enter_message: Enter your message
+        submit: Contact Us
