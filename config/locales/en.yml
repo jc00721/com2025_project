@@ -38,3 +38,7 @@ en:
         message: "Message"
         enter_message: Enter your message
         submit: Contact Us
+    
+    request_contact:
+        no_email: You must supply an email address
+        email_sent: Thank you. We will be in touch shortly.
