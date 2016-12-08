@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyText
+  name: testOne
   dob: 2016-12-08
   label: MyText
 
 two:
-  name: MyText
+  name: testTwo
   dob: 2016-12-08
   label: MyText
