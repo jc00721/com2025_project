@@ -10,6 +10,8 @@
   %b Label:
   = @artist.label
 
-= link_to 'Edit', edit_artist_path(@artist)
+= link_to t('.edit'), edit_artist_path(@artist)
 \|
-= link_to 'Back', artists_path
+= link_to t('.back'), artists_path
+
+%p= link_to 'Add Album', new_album_path(artist_id: @artist)

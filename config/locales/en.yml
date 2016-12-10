@@ -22,6 +22,8 @@
 en:
   app_title: AudioVape
   app_description: The open music platform
+  edit: Edit
+  back: Back
 
   home:
     home:
