@@ -59,6 +59,7 @@ class AlbumsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to albums_url, notice: 'Album was successfully destroyed.' }
       format.json { head :no_content }
+      format.js { flash[:notice] = 'Album was successfully destroyed.'}
     end
   end
 
