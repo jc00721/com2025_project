@@ -16,6 +16,18 @@
   %b Tracks:
   = @album.tracks
 
+%p Songs:
+%table
+  %tbody
+    - @album.songs.each do |song|
+      %tr{id: "song_#{song.id}"}
+        %td= song.title
+        %td= link_to 'Show', song
+        %td= link_to 'Edit', edit_song_path(song)
+        %td= link_to 'Destroy', song, :method => :delete, :data => { :confirm => 'Are you sure?' }, :remote => true
+
+%p= link_to 'Add Song', new_song_path(album_id: @album)
+
 = link_to 'Edit', edit_album_path(@album)
 \|
 = link_to 'Back', albums_path

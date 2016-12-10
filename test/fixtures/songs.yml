@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyText
+  album: one
+  genre: MyString
+  length: 9.99
+  single: false
+
+two:
+  title: MyText
+  album: two
+  genre: MyString
+  length: 9.99
+  single: false
