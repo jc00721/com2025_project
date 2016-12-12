@@ -22,12 +22,12 @@
     - @album.songs.each do |song|
       %tr{id: "song_#{song.id}"}
         %td= song.title
-        %td= link_to 'Show', song
-        %td= link_to 'Edit', edit_song_path(song)
-        %td= link_to 'Destroy', song, :method => :delete, :data => { :confirm => 'Are you sure?' }, :remote => true
+        %td= link_to t('show'), song
+        %td= link_to t('edit'), edit_song_path(song)
+        %td= link_to t('destroy'), song, :method => :delete, :data => { :confirm => 'Are you sure?' }, :remote => true
 
-%p= link_to 'Add Song', new_song_path(album_id: @album)
+%p= link_to t('add_song'), new_song_path(album_id: @album)
 
-= link_to 'Edit', edit_album_path(@album)
+= link_to t('edit'), edit_album_path(@album)
 \|
-= link_to 'Back', albums_path
+= link_to t('back'), albums_path

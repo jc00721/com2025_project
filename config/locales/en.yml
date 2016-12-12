@@ -21,13 +21,28 @@
 
 en:
   app_title: AudioVape
-  app_description: The open music platform
+  app_description: The music cataloguing database
   edit: Edit
   back: Back
+  show: Show
+  save: Save
+  destroy: Destroy
   copyright: ©AudioVape 2016 
+  nav_artist: Artists
+  nav_album: Albums
+  nav_song: Songs
+  nav_contact: Contact Us
+  artists:
+    show:
+      add_album: Add Album
+    index:
+      new_artist: New Artist
+  albums:
+    show:
+      add_song: Add Song
   home:
     home:
-    
+      title: Welcome to AudioVape
     contact:
         title: Contact Us
         contact_us: Complete the following form to get in touch with us.
@@ -44,3 +59,6 @@ en:
     request_contact:
         no_email: You must supply an email address
         email_sent: Thank you. We will be in touch shortly.
+        
+        
+  

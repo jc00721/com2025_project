@@ -24,15 +24,17 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{:href => "/"} AudioVape
+          %a.navbar-brand{:href => root_path}= t('app_title')
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           %ul.nav.navbar-nav
             %li.active
-              %a{:href => "/artists"} Artists
+              %a{:href => artists_path}= t('nav_artist')
             %li
-              %a{:href => "/albums"} Albums
+              %a{:href => albums_path}= t('nav_album')
             %li
-              %a{:href => "/songs"} Songs
+              %a{:href => songs_path}= t('nav_song')
+            %li
+              %a{:href => contact_path}= t('nav_contact')
 
   %body
     - flash.each do |key, value|

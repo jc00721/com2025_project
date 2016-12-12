@@ -20,9 +20,9 @@
         %td= album.year
         %td= album.length
         %td= album.tracks
-        %td= link_to 'Show', album
-        %td= link_to 'Edit', edit_album_path(album)
-        %td= link_to 'Destroy', album, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to t('show'), album
+        %td= link_to t('edit'), edit_album_path(album)
+        %td= link_to t('destroy'), album, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 
