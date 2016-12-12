@@ -10,8 +10,12 @@ class HomeController < ApplicationController
     email = params[:email]
     subject = params[:subject]
     message = params[:message]
-    ContactMailer.contact_email(email, name, subject, message).deliver_now
-    flash[:notice] = I18n.t("home.request_contact.email_sent")
-    redirect_to root_path
+    if email.blank? or name.blank? or subject.blank? or message.blank?
+      flash[:alert] = I18n.t("home.request_contact.missing_field")
+    else
+      ContactMailer.contact_email(email, name, subject, message).deliver_now
+      flash[:notice] = I18n.t("home.request_contact.email_sent")
+    end
+   redirect_to root_path
   end
 end

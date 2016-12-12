@@ -57,6 +57,7 @@ en:
         submit: Contact Us
     
     request_contact:
+        missing_field: One or more fields were missing
         email_sent: Thank you. We will be in touch shortly.
         
         
