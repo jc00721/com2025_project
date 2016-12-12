@@ -1,14 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyText
+  title: albumTwo
   artist: one
   year: 1
   length: 1.1
   tracks: 1
 
 two:
-  title: MyText
+  title: albumOne
   artist: two
   year: 1
   length: 1.1

@@ -19,7 +19,7 @@ class AlbumsControllerTest < ActionController::TestCase
 
   test "should create album" do
     assert_difference('Album.count') do
-      post :create, album: { artist_id: @artist, length: @album.length, title: @album.title, tracks: @album.tracks, year: @album.year }
+      post :create, album: { artist_id: @artist, length: @album.length, title: @album.title + "create", tracks: @album.tracks, year: @album.year }
     end
 
     assert_redirected_to album_path(assigns(:album))

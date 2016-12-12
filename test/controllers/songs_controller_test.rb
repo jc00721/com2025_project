@@ -58,7 +58,7 @@ class SongsControllerTest < ActionController::TestCase
     song = Song.new
     
     song.album = @album
-    song.title = "test"
+    song.title = "testCreate"
     song.genre = "test"
     song.length = 3.42
     song.single = false
