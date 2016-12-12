@@ -67,4 +67,25 @@ class AlbumsControllerTest < ActionController::TestCase
     album.save
     assert album.valid?
   end
+    test 'should not allow dublicate album' do
+    album1 = Album.new
+    
+    album1.artist = @artist
+    album1.title = "test"
+    album1.year = 2016
+    album1.tracks = 12
+    album1.length = 1.1
+    album1.save
+    assert album1.valid?
+    
+    album2 = Album.new
+    
+    album2.artist = @artist
+    album2.title = "test"
+    album2.year = 2016
+    album2.tracks = 12
+    album2.length = 1.1
+    album2.save
+    refute album2.valid?
+  end  
 end
